@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アイラブハンバーガー メニュー</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            color: #e74c3c;
+            font-size: 1.5em;
+        }
+        .menu-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .item-name {
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .item-description {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+        .item-price {
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 5px;
+        }
+        .language {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        /* レスポンシブデザイン用のメディアクエリ */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .menu-container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .menu-item {
+                padding: 8px;
+            }
+            .item-name {
+                font-size: 0.9em;
+            }
+            .item-description, .language {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>アイラブハンバーガー メニュー</h1>
+        <p class="language">I Love Hamburger Menu / 我爱汉堡包菜单 / 아이러브 햄버거 메뉴</p>
+        
+        <div class="menu-section">
+            <h2>バーガー / Burgers / 汉堡包 / 햄버거</h2>
+            <div class="menu-item">
+                <div class="item-name">オリジナルバーガー</div>
+                <div class="item-description">ジューシーなビーフパティと新鮮な野菜</div>
+                <div class="language">Original Burger: Juicy beef patty with fresh vegetables</div>
+                <div class="language">原味汉堡︓多汁的⽜⾁饼搭配新鲜蔬菜</div>
+                <div class="language">오리지널 버거: 육즙 가득한 쇠고기 패티와 신선한 야채</div>
+                <div class="item-price">¥1,800</div>
+                <div class="item-description">神⼾⽜に変更可能 / Changeable to Kobe beef (¥4,500)</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">チーズバーガー</div>
+                <div class="item-description">とろけるチーズを贅沢にトッピング</div>
+                <div class="language">Cheese Burger: Topped with melting cheese</div>
+                <div class="language">芝⼠汉堡︓配有浓郁的芝⼠</div>
+                <div class="language">치즈버거: 녹아내리는 치즈를 듬뿍 토핑</div>
+                <div class="item-price">¥1,900</div>
+                <div class="item-description">神⼾⽜に変更可能 / Changeable to Kobe beef (¥5,000)</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">ダブルチーズバーガー</div>
+                <div class="item-description">チーズとパティを2倍楽しめる</div>
+                <div class="language">Double Cheese Burger: Double the cheese and patty</div>
+                <div class="language">双层芝⼠汉堡︓双倍芝⼠和⽜⾁饼</div>
+                <div class="language">더블 치즈버거: 치즈와 패티를 2배로 즐기세요</div>
+                <div class="item-price">¥3,500</div>
+                <div class="item-description">神⼾⽜に変更可能 / Changeable to Kobe beef (¥8,800)</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">照り焼き⽟⼦バーガー</div>
+                <div class="item-description">照り焼きソースと半熟卵の絶妙なハーモニー</div>
+                <div class="language">Teriyaki Egg Burger: Harmony of teriyaki sauce and soft-boiled egg</div>
+                <div class="language">照烧蛋汉堡︓照烧酱与半熟蛋的完美搭配</div>
+                <div class="language">데리야키 달걀 버거: 데리야키 소스와 반숙 달걀의 절묘한 조화</div>
+                <div class="item-price">¥2,000</div>
+                <div class="item-description">神⼾⽜に変更可能 / Changeable to Kobe beef (¥5,300)</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">エビカツバーガー</div>
+                <div class="item-description">サクサクのエビカツとタルタルソース</div>
+                <div class="language">Shrimp Cutlet Burger: Crispy shrimp cutlet with tartar sauce</div>
+                <div class="language">炸虾汉堡︓酥脆炸虾配塔塔酱</div>
+                <div class="language">새우 커틀릿 버거: 바삭한 새우 커틀릿과 타르타르 소스</div>
+                <div class="item-price">¥2,000</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">かつバーガー</div>
+                <div class="item-description">ジューシーな豚カツとソース</div>
+                <div class="language">Pork Cutlet Burger: Juicy pork cutlet with sauce</div>
+                <div class="language">炸猪排汉堡︓多汁的炸猪排配酱汁</div>
+                <div class="language">돈까스 버거: 육즙 가득한 돈까스와 소스</div>
+                <div class="item-price">¥1,800</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>セットメニュー / Combo Menus / 套餐 / 세트 메뉴</h2>
+            <div class="menu-item">
+                <div class="item-name">ポテトセット</div>
+                <div class="item-description">バーガー + ポテト + ドリンク</div>
+                <div class="language">Fries Combo: Burger + Fries + Drink</div>
+                <div class="language">薯条套餐︓汉堡 + 薯条 + 饮料</div>
+                <div class="language">감자튀김 세트: 버거 + 감자튀김 + 음료</div>
+                <div class="item-price">+¥500</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">チキンセット</div>
+                <div class="item-description">バーガー + チキン + ドリンク</div>
+                <div class="language">Chicken Combo: Burger + Chicken + Drink</div>
+                <div class="language">鸡块套餐︓汉堡 + 鸡块 + 饮料</div>
+                <div class="language">치킨 세트: 버거 + 치킨 너겟 + 음료</div>
+                <div class="item-price">+¥700</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">ホットドッグセット</div>
+                <div class="item-description">バーガー + ホットドッグ + ドリンク</div>
+                <div class="language">Hot Dog Combo: Burger + Hot Dog + Drink</div>
+                <div class="language">热狗套餐︓汉堡 + 热狗 + 饮料</div>
+                <div class="language">핫도그 세트: 버거 + 핫도그 + 음료</div>
+                <div class="item-price">+¥700</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">スペシャルセット</div>
+                <div class="item-description">バーガー + ポテト + チキン + ホットドッグ + ドリンク</div>
+                <div class="language">Special Combo: Burger + Fries + Chicken + Hot Dog + Drink</div>
+                <div class="language">特別套餐︓汉堡 + 薯条 + 热狗 + 炸鸡 + 饮料</div>
+                <div class="language">스페셜세트: 버거 + 감자튀김 + 프라이드 치킨 + 핫도그 + 음료</div>
+                <div class="item-price">+¥1,500</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>モーニングセット / Morning Combo / 早餐套餐 / 모닝 세트</h2>
+            <div class="menu-item">
+                <div class="item-name">モーニングセット</div>
+                <div class="item-description">ホットドッグ + ドリンク</div>
+                <div class="language">Morning Combo: Hot Dog + Drink</div>
+                <div class="language">早餐套餐︓热狗 + 饮料</div>
+                <div class="language">모닝 세트: 핫도그 + 음료</div>
+                <div class="item-price">¥500</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>ドリンク / Drinks / 饮料 / 음료</h2>
+            <div class="menu-item">
+                <div class="item-name">コーラ / Cola / 可乐 / 콜라</div>
+                <div class="item-name">コーラゼロ / Cola Zero / 零度可乐 / 제로 콜라</div>
+                <div class="item-name">ファンタメロン / Fanta Melon / 芬达蜜⽠味 / 환타 멜론</div>
+                <div class="item-name">オレンジジュース / Orange Juice / 橙汁 / 오렌지</div>
+                <div class="item-name">ウーロン茶 / Oolong Tea / 乌龙茶 / 우롱차</div>
+                <div class="item-name">ジンジャーエール / Ginger ale / 姜汁汽水 / 진저 에일</div>
+                <div class="item-price">S:¥300 M:¥400 L:¥800</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>サイドメニュー / Side menu / 侧面菜单 / 사이드 메뉴</h2>
+            <div class="menu-item">
+                <div class="item-name">ポテト / Fries / 薯条 / 감자튀김</div>
+                <div class="item-price">¥800</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">チキン / Chicken / 炸鸡 / 프라이드 치킨</div>
+                <div class="item-price">¥900</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">ホットドッグ / Hot Dog / 热狗 / 핫도그</div>
+                <div class="item-price">¥700</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-name">スペシャルセット</div>
+                <div class="language">Special Combo: Fries + Chicken + Hot dog</div>
+                <div class="language">特別套餐: 薯条 + 热狗 + 炸鸡</div>
+                <div class="language">스페셜 세트: 감자튀김 + 프라이드 치킨 + 핫도그</div>
+                <div class="item-price">¥2,000</div>
+            </div>
+        </div>
+    </div>
